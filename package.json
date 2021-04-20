@@ -1,7 +1,6 @@
 {
-  "name": "start_gulp",
+  "name": "test_work",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +17,14 @@
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.5.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FakeEdition/test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FakeEdition/test/issues"
+  },
+  "homepage": "https://github.com/FakeEdition/test#readme",
+  "description": ""
 }
