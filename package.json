@@ -16,11 +16,12 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "jquery-form-styler": "^2.0.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FakeEdition/test.git"
+    "url": "git+https://github.com/FakeEdition/test_work.git"
   },
   "bugs": {
     "url": "https://github.com/FakeEdition/test/issues"

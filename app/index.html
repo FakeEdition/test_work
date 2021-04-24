@@ -1,13 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>тестовое задание</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  
-  <script>  </script>
+  <header class="header"></header>
+
+
+  <div class="cargo-order">
+    <h1 class="cargo-order__title">FTL: Прямая машина</h1>
+
+    <div class="cargo-order__wrapper">
+
+      <div class="cargo-order__form">
+        <div class="container">
+          <div class="cargo-order__step">
+
+            <div class="step-order">
+              <div class="step-order__icon">
+                <span class="step-order__number">1</span>
+              </div>
+              <h3 class="step-order__title">Маршрут</h3>
+            </div>
+
+            <div class="route">
+              <form class="route__form" action="#">
+                <label class="route__label">
+                  Откуда
+                  <input class="route__input" type="text" required>
+                </label>
+                <label class="route__label">
+                  Куда
+                  <input class="route__input" type="text" required>
+                </label>
+              </form>
+            </div>
+          </div>
+
+
+
+          <div class="cargo-order__step">
+
+            <div class="step-order">
+              <div class="step-order__icon">
+                <span class="step-order__number">2</span>
+              </div>
+              <h3 class="step-order__title">Транспорт</h3>
+            </div>
+
+            <div class="transport">
+           <div class="transport__field">
+             <label for="carrying" class="transport__label">Грузоподъёмность</label>
+
+             <div class="transport__filter-selects">
+               <select class="transport__filter-sort select-styler">
+                 <option value="">Не выбрана</option>
+                 <option value="">1</option>
+                 <option value="">2</option>
+                 <option value="">3</option>
+               </select>
+             </div>
+           </div>
+
+           <div class="transport__field">
+             <label for="carrying" class="transport__label">Способ погрузки</label>
+             <div class="transport__filter-selects">
+               <select class="transport__filter-sort select-styler">
+                 <option value="">Задняя</option>
+                 <option value="">1</option>
+                 <option value="">2</option>
+                 <option value="">3</option>
+               </select>
+             </div>
+           </div>
+          
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="cargo-order__container">
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer"></footer>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
+
 </html>
