@@ -41,6 +41,7 @@
   &__step {
     margin-bottom: 40px;
   }
+
   &__title {
     font-style: normal;
     font-weight: 700;
@@ -54,7 +55,18 @@
 
   &__wrapper {
     display: flex;
-    max-width: 1100px;
+    max-width: 1105px;
+  }
+  &__form {
+    width: 100%;
+  }
+  &__container {
+    margin-left: 10px;
+    max-width: 356px;
+    max-height: 102px;
+    padding: 24px;
+    background-color: #4B4B4F;
+    color: #fff;
   }
 }
 
@@ -69,6 +81,7 @@
   &__input {
     margin: 8px 0 16px 0;
     width: 100%;
+    max-width: 728px;
     border-radius: 1px;
     font-style: normal;
     font-weight: 400;
@@ -78,45 +91,51 @@
   }
 }
 
-.transport,.goods {
+.transport,
+.goods {
   display: flex;
+
   &__field+.transport__field {
     margin-left: 15px;
   }
+
   &__field {
     max-width: 172px;
     width: 100%;
   }
+
   &__label {
     font-size: 13px;
     line-height: 16px;
   }
+
   &__filter-sort {
     width: 100%;
     height: 44px;
-    font-size: 15px;
-    line-height: 18px;
   }
+
   &__filter-selects {
     margin-top: 10px;
   }
 }
-.goods__field + .goods__field {
+
+.goods__field+.goods__field {
   margin-left: 15px;
 }
 
 .goods {
   margin-bottom: 15px;
+
   &__value {
     margin-top: 10px;
   }
+
   &__input {
-   width: 100%;
-   height: 44px;
-   font-size: 15px;
-   line-height: 18px;
-   padding: 0 15px;
+    width: 100%;
+    height: 44px;
+    padding: 0 15px;
   }
+
   &__type {
     max-width: 356px;
     width: 100%;
@@ -126,9 +145,60 @@
 }
 
 
+.time {
+  &__icon {
+    margin: 0 12px;
+  }
 
+  &__adress {
+    display: inherit;
+    align-items: center
+  }
 
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
 
+  &__adress-from,
+  &__adress-to {
+    background-color: #4B4B4F;
+    display: flex;
+    justify-content: space-between;
+    max-width: 730px;
+    width: 100%;
+    height: 44px;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    line-height: 19px;
+  }
+
+  &__btn {
+    margin-right: 10px;
+    padding: 4px 13px;
+    background-color: #717174;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+  }
+}
+
+.comment {
+  margin-bottom: 130px;
+  &__input  {
+    margin-top: 9px;
+    padding: 13px 23px 49px 14px;
+    max-width: 730px;
+    width: 100%;
+    height: 80px;
+  }
+}
 
 
 

@@ -4,10 +4,11 @@ body {
   margin: 0;
   padding: 0;
   @extend %helvetica-400;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .container {
     max-width: 730px;
     margin: 0 auto 0 170px;
-    width: 100%;
 }
