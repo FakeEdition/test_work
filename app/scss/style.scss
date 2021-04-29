@@ -57,9 +57,11 @@
     display: flex;
     max-width: 1105px;
   }
+
   &__form {
     width: 100%;
   }
+
   &__container {
     margin-left: 10px;
     max-width: 356px;
@@ -107,6 +109,7 @@
   &__label {
     font-size: 13px;
     line-height: 16px;
+    position: relative;
   }
 
   &__filter-sort {
@@ -135,6 +138,34 @@
     height: 44px;
     padding: 0 15px;
   }
+
+  &__box {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin-right: 36px;
+  }
+
+  &__input-box {
+    &:checked+.goods__checkbox {
+      background-color: #ef483e;
+      background-image: url('../images/check.svg') ;
+    }
+  }
+
+  &__checkbox {
+    height: 24px;
+    width: 24px;
+    border: 2px solid #FFFFFF;
+    position: absolute;
+    top: -1px;
+  }
+
+  &__text {
+    padding-left: 36px;
+  }
+
 
   &__type {
     max-width: 356px;
@@ -191,12 +222,15 @@
 
 .comment {
   margin-bottom: 130px;
-  &__input  {
+
+  &__input {
     margin-top: 9px;
     padding: 13px 23px 49px 14px;
     max-width: 730px;
     width: 100%;
     height: 80px;
+    border: none;
+
   }
 }
 
