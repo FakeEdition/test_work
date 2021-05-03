@@ -137,6 +137,7 @@
     width: 100%;
     height: 44px;
     padding: 0 15px;
+    max-width: 165px;
   }
 
   &__box {
@@ -150,7 +151,10 @@
   &__input-box {
     &:checked+.goods__checkbox {
       background-color: #ef483e;
-      background-image: url('../images/check.svg') ;
+      background-image: url('../images/check.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      border: none;
     }
   }
 
@@ -164,8 +168,8 @@
 
   &__text {
     padding-left: 36px;
+    cursor: pointer;
   }
-
 
   &__type {
     max-width: 356px;
@@ -173,6 +177,20 @@
     display: block;
     margin-bottom: 15px;
   }
+
+  &__temp-select {
+    margin-top: 8px;
+  }
+ &__active {
+   display: flex;
+   margin-top: 15px;
+   transform: translateX(-200%);
+   height: 0;
+ }
+}
+.goods__active.goods__active-on {
+  transform: translateX(0);
+  height: 70px;
 }
 
 
@@ -217,6 +235,11 @@
     font-size: 13px;
     line-height: 16px;
     letter-spacing: 0.05em;
+    cursor: pointer;
+  }
+
+  &__adress-time-to {
+    opacity: 0.3;
   }
 }
 
@@ -235,17 +258,56 @@
 }
 
 
+.jq-selectbox__select {
+  height: 44px;
+  padding: 13px 0 0 14px;
+  color: #000;
+  border: none;
+  background: #fff;
+  box-shadow: none;
+  text-shadow: none;
+  font-size: 15px;
+  line-height: 18px;
 
+  &:hover {
+    background: #fff;
+  }
+}
 
+.jq-selectbox__trigger {
+  border-left: none;
+}
 
+.jq-selectbox__trigger-arrow {
+  position: absolute;
+  top: 20px;
+  right: 19px;
+  width: 8px;
+  height: 5px;
+  border: none;
+  background-image: url('../images/arrow.svg');
+}
 
+.jq-selectbox li.disabled {
+  display: none;
 
+}
 
+.jq-selectbox li.selected {
+  background-color: #fff;
+  color: #000;
+}
 
+.jq-selectbox li:hover {
+  background-color: #ef483e;
+  color: #fff;
+}
 
+.jq-selectbox__select-text {
+  max-width: 125px;
+  @extend %helvetica-400;
 
-
-
+}
 
 
 

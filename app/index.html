@@ -59,10 +59,10 @@
                 <label for="carrying" class="transport__label">Грузоподъёмность</label>
 
                 <div class="transport__filter-selects">
-                  <select class="transport__filter-sort">
-                    <option class="transport__item  select-styler" disabled selected style="display: none;" value="">Не
+                  <select class="transport__filter-sort select-style">
+                    <option class="transport__item  select-styler" disabled selected " value="">Не
                       выбрана</option>
-                    <option class="transport__item" value="">1</option>
+                    <option class=" transport__item" value="">1</option>
                     <option class="transport__item" value="">2</option>
                     <option class="transport__item" value="">3</option>
                   </select>
@@ -72,7 +72,7 @@
               <div class="transport__field">
                 <label for="carrying" class="transport__label">Способ погрузки</label>
                 <div class="transport__filter-selects">
-                  <select class="transport__filter-sort">
+                  <select class="transport__filter-sort select-style">
                     <option class="transport__item" value="">Задняя</option>
                     <option class="transport__item" value="">1</option>
                     <option class="transport__item" value="">2</option>
@@ -100,8 +100,8 @@
                 <label for="carrying" class="goods__label">Тип груза</label>
 
                 <div class="goods__filter-selects">
-                  <select class="goods__filter-sort">
-                    <option class="goods__item" value="">Не выбран</option>
+                  <select class="goods__filter-sort  select-style">
+                    <option class="goods__item " disabled selected value="">Не выбран</option>
                     <option class="goods__item" value="">1</option>
                     <option class="goods__item" value="">2</option>
                     <option class="goods__item" value="">3</option>
@@ -115,7 +115,7 @@
                   <label for="carrying" class="goods__label">Класс опасности</label>
 
                   <div class="goods__filter-selects">
-                    <select class="goods__filter-sort">
+                    <select class="goods__filter-sort  select-style">
                       <option class="goods__item" value="">Класс 5 — Окисляющие вещества и органические перекиси
                       </option>
                       <option class="goods__item" value="">1</option>
@@ -137,12 +137,38 @@
               <div class="goods__temp">
                 <label class="goods__label">
                   <div class="goods__box">
-                  <input class="goods__input-box" type="checkbox">
-                  <span class="goods__checkbox"></span>
+                    <input class="goods__input-box" type="checkbox">
+                    <span class="goods__checkbox"></span>
                   </div>
                   <span class="goods__text">Требуется температурный режим</span>
                 </label>
 
+                <div class="goods__active">
+
+                  <div class="goods__field">
+                    <label class="goods__label" for="#">От, °C</label>
+                    <div class="goods__temp-select">
+                      <input class="goods__input" type="text" placeholder="-40">
+                    </div>
+                  </div>
+
+                  <div class="goods__field">
+                    <label class="goods__label" for="#">До, °C</label>
+                    <div class="goods__temp-select">
+                      <input class="goods__input" type="text" placeholder="+40">
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
               </div>
             </div>
           </div>
@@ -178,7 +204,7 @@
                 </p>
               </div>
 
-              <div class="time__adress-time">
+              <div class="time__adress-time-from">
                 <button class="time__btn">
                   НЕ ВЫБРАНО
                 </button>
@@ -199,7 +225,7 @@
                 </p>
               </div>
 
-              <div class="time__adress-time">
+              <div class="time__adress-time-to">
                 <button class="time__btn">
                   НЕ ВЫБРАНО
                 </button>

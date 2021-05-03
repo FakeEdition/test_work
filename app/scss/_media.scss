@@ -1,0 +1,36 @@
+@media (max-width: 900px) {
+
+  .cargo-order {
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__wrapper {
+      display: block;
+      max-width: 500px;
+    }
+  }
+ 
+  .step-order {
+
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
