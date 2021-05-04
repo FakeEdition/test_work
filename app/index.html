@@ -11,12 +11,9 @@
 <body>
   <header class="header"></header>
 
-
   <div class="cargo-order">
     <h1 class="cargo-order__title">FTL: Прямая машина</h1>
-
     <div class="cargo-order__wrapper">
-
       <div class="cargo-order__form">
         <div class="container">
           <div class="cargo-order__step">
@@ -41,23 +38,16 @@
               </form>
             </div>
           </div>
-
-
-
           <div class="cargo-order__step">
-
             <div class="step-order">
               <div class="step-order__icon">
                 <span class="step-order__number">2</span>
               </div>
               <h3 class="step-order__title">Транспорт</h3>
             </div>
-
             <div class="transport">
-
               <div class="transport__field">
                 <label for="carrying" class="transport__label">Грузоподъёмность</label>
-
                 <div class="transport__filter-selects">
                   <select class="transport__filter-sort select-style">
                     <option class="transport__item  select-styler" disabled selected " value="">Не
@@ -68,7 +58,6 @@
                   </select>
                 </div>
               </div>
-
               <div class="transport__field">
                 <label for="carrying" class="transport__label">Способ погрузки</label>
                 <div class="transport__filter-selects">
@@ -83,8 +72,6 @@
 
             </div>
           </div>
-
-
           <div class="cargo-order__step">
 
             <div class="step-order">
@@ -95,29 +82,13 @@
             </div>
 
             <div class="wrapper">
-
-              <div class="goods__type">
-                <label for="carrying" class="goods__label">Тип груза</label>
-
-                <div class="goods__filter-selects">
-                  <select class="goods__filter-sort  select-style">
-                    <option class="goods__item " disabled selected value="">Не выбран</option>
-                    <option class="goods__item" value="">1</option>
-                    <option class="goods__item" value="">2</option>
-                    <option class="goods__item" value="">3</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="goods">
-
-                <div class="goods__field">
-                  <label for="carrying" class="goods__label">Класс опасности</label>
+              <div class="wrap">
+                <div class="goods__type">
+                  <label for="carrying" class="goods__label">Тип груза</label>
 
                   <div class="goods__filter-selects">
                     <select class="goods__filter-sort  select-style">
-                      <option class="goods__item" value="">Класс 5 — Окисляющие вещества и органические перекиси
-                      </option>
+                      <option class="goods__item " disabled selected value="">Не выбран</option>
                       <option class="goods__item" value="">1</option>
                       <option class="goods__item" value="">2</option>
                       <option class="goods__item" value="">3</option>
@@ -125,13 +96,29 @@
                   </div>
                 </div>
 
-                <div class="goods__field">
-                  <label for="carrying" class="goods__label">Объявленная ценность, ₽</label>
-                  <div class="goods__value">
-                    <input class="goods__input" type="text" placeholder=">1">
+                <div class="goods">
+
+                  <div class="goods__field goods__class">
+                    <label for="carrying" class="goods__label">Класс опасности</label>
+
+                    <div class="goods__filter-selects">
+                      <select class="goods__filter-sort  select-style">
+                        <option class="goods__item" value="">Класс 5 — Окисляющие вещества и органические перекиси
+                        </option>
+                        <option class="goods__item" value="">1</option>
+                        <option class="goods__item" value="">2</option>
+                        <option class="goods__item" value="">3</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="goods__field">
+                    <label for="carrying" class="goods__label">Объявленная ценность, ₽</label>
+                    <div class="goods__value">
+                      <input class="goods__input" type="text" placeholder=">1">
+                    </div>
                   </div>
                 </div>
-
               </div>
 
               <div class="goods__temp">
@@ -158,21 +145,10 @@
                       <input class="goods__input" type="text" placeholder="+40">
                     </div>
                   </div>
-
-
-
-
-
-
-
-
-
-
                 </div>
               </div>
             </div>
           </div>
-
           <div class="cargo-order__step">
 
             <div class="step-order">
@@ -203,14 +179,12 @@
                   Адрес не указан
                 </p>
               </div>
-
               <div class="time__adress-time-from">
                 <button class="time__btn">
                   НЕ ВЫБРАНО
                 </button>
               </div>
             </div>
-
 
             <div class="time__adress-to">
               <div class="time__adress">
@@ -248,10 +222,7 @@
           Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
         </p>
       </div>
-
     </div>
-
-
   </div>
 
   <footer class="footer"></footer>
