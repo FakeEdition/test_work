@@ -1,0 +1,66 @@
+@media (max-width: 900px) {
+
+  .container {
+    margin: 40px 16px;
+  }
+
+  .cargo-order {
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+      margin-left: 16px;
+    }
+
+    &__wrapper {
+      display: block;
+      max-width: 500px;
+    }
+    &__container {
+      margin: 0 18px 37px 18px;
+    }
+  }
+
+  .step-order {
+
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .goods {
+    &__class {
+      display: none;
+    }
+
+    &__type {
+      max-width: 165px;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  .time {
+    &__text {
+      background: linear-gradient(#C4C4C4 100%, #C4C4C4 0%, );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .wrap {
+    display: flex;
+  }
+
+  .comment {
+    margin-bottom: 40px;
+  }
+
+
+
+
+
+
+
+
+}

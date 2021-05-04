@@ -1,13 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>тестовое задание</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  
-  <script>  </script>
+  <header class="header"></header>
+
+  <div class="cargo-order">
+    <h1 class="cargo-order__title">FTL: Прямая машина</h1>
+    <div class="cargo-order__wrapper">
+      <div class="cargo-order__form">
+        <div class="container">
+          <div class="cargo-order__step">
+
+            <div class="step-order">
+              <div class="step-order__icon">
+                <span class="step-order__number">1</span>
+              </div>
+              <h3 class="step-order__title">Маршрут</h3>
+            </div>
+
+            <div class="route">
+              <form class="route__form" action="#">
+                <label class="route__label">
+                  Откуда
+                  <input class="route__input" type="text" required>
+                </label>
+                <label class="route__label">
+                  Куда
+                  <input class="route__input" type="text" required>
+                </label>
+              </form>
+            </div>
+          </div>
+          <div class="cargo-order__step">
+            <div class="step-order">
+              <div class="step-order__icon">
+                <span class="step-order__number">2</span>
+              </div>
+              <h3 class="step-order__title">Транспорт</h3>
+            </div>
+            <div class="transport">
+              <div class="transport__field">
+                <label for="carrying" class="transport__label">Грузоподъёмность</label>
+                <div class="transport__filter-selects">
+                  <select class="transport__filter-sort select-style">
+                    <option class="transport__item  select-styler" disabled selected " value="">Не
+                      выбрана</option>
+                    <option class=" transport__item" value="">1</option>
+                    <option class="transport__item" value="">2</option>
+                    <option class="transport__item" value="">3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="transport__field">
+                <label for="carrying" class="transport__label">Способ погрузки</label>
+                <div class="transport__filter-selects">
+                  <select class="transport__filter-sort select-style">
+                    <option class="transport__item" value="">Задняя</option>
+                    <option class="transport__item" value="">1</option>
+                    <option class="transport__item" value="">2</option>
+                    <option class="transport__item" value="">3</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="cargo-order__step">
+
+            <div class="step-order">
+              <div class="step-order__icon">
+                <span class="step-order__number">3</span>
+              </div>
+              <h3 class="step-order__title">Груз</h3>
+            </div>
+
+            <div class="wrapper">
+              <div class="wrap">
+                <div class="goods__type">
+                  <label for="carrying" class="goods__label">Тип груза</label>
+
+                  <div class="goods__filter-selects">
+                    <select class="goods__filter-sort  select-style">
+                      <option class="goods__item " disabled selected value="">Не выбран</option>
+                      <option class="goods__item" value="">1</option>
+                      <option class="goods__item" value="">2</option>
+                      <option class="goods__item" value="">3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="goods">
+
+                  <div class="goods__field goods__class">
+                    <label for="carrying" class="goods__label">Класс опасности</label>
+
+                    <div class="goods__filter-selects">
+                      <select class="goods__filter-sort  select-style">
+                        <option class="goods__item" value="">Класс 5 — Окисляющие вещества и органические перекиси
+                        </option>
+                        <option class="goods__item" value="">1</option>
+                        <option class="goods__item" value="">2</option>
+                        <option class="goods__item" value="">3</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="goods__field">
+                    <label for="carrying" class="goods__label">Объявленная ценность, ₽</label>
+                    <div class="goods__value">
+                      <input class="goods__input" type="text" placeholder=">1">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="goods__temp">
+                <label class="goods__label">
+                  <div class="goods__box">
+                    <input class="goods__input-box" type="checkbox">
+                    <span class="goods__checkbox"></span>
+                  </div>
+                  <span class="goods__text">Требуется температурный режим</span>
+                </label>
+
+                <div class="goods__active">
+
+                  <div class="goods__field">
+                    <label class="goods__label" for="#">От, °C</label>
+                    <div class="goods__temp-select">
+                      <input class="goods__input" type="text" placeholder="-40">
+                    </div>
+                  </div>
+
+                  <div class="goods__field">
+                    <label class="goods__label" for="#">До, °C</label>
+                    <div class="goods__temp-select">
+                      <input class="goods__input" type="text" placeholder="+40">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cargo-order__step">
+
+            <div class="step-order">
+              <div class="step-order__icon">
+                <span class="step-order__number">4</span>
+              </div>
+              <h3 class="step-order__title">Время</h3>
+            </div>
+            <div class="time">
+
+              <label class="time__label">
+                Когда прибыть на точку
+                <span>
+                  700 км в день
+                </span>
+              </label>
+            </div>
+
+            <div class="time__adress-from">
+              <div class="time__adress">
+                <svg class="time__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12ZM16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+                    fill="#EF483E" />
+                </svg>
+                <p class="time__text">
+                  Адрес не указан
+                </p>
+              </div>
+              <div class="time__adress-time-from">
+                <button class="time__btn">
+                  НЕ ВЫБРАНО
+                </button>
+              </div>
+            </div>
+
+            <div class="time__adress-to">
+              <div class="time__adress">
+                <svg class="time__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12ZM16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+                    fill="#FFF" />
+                </svg>
+                <p class="time__text">
+                  Адрес не указан
+                </p>
+              </div>
+
+              <div class="time__adress-time-to">
+                <button class="time__btn">
+                  НЕ ВЫБРАНО
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment">
+            <label class="comment__label">
+              Комментарий к заказу
+
+              <input class="comment__input" type="text" name="" id=""
+                placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу">
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="cargo-order__container">
+        <p class="cargo-order__text">
+          Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer"></footer>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
+
 </html>
