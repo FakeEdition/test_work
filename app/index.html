@@ -38,40 +38,49 @@
               </form>
             </div>
           </div>
+
           <div class="cargo-order__step">
+
+
             <div class="step-order">
               <div class="step-order__icon">
                 <span class="step-order__number">2</span>
               </div>
               <h3 class="step-order__title">Транспорт</h3>
             </div>
+
+
             <div class="transport">
               <div class="transport__field">
                 <label for="carrying" class="transport__label">Грузоподъёмность</label>
-                <div class="transport__filter-selects">
-                  <select class="transport__filter-sort select-style">
-                    <option class="transport__item  select-styler" disabled selected " value="">Не
+                <div class="transport__filter-selects select-style">
+                  <select class="transport__filter-sort select-style" required>
+                    <option class="transport__item" disabled selected hidden value="">Не
                       выбрана</option>
-                    <option class=" transport__item" value="">1</option>
-                    <option class="transport__item" value="">2</option>
-                    <option class="transport__item" value="">3</option>
+                    <option class="transport__item" value="1">1</option>
+                    <option class="transport__item" value="2">2</option>
+                    <option class="transport__item" value="3">3</option>
                   </select>
+                  <span class="transport__arrow arrow"></span>
                 </div>
               </div>
+
               <div class="transport__field">
                 <label for="carrying" class="transport__label">Способ погрузки</label>
-                <div class="transport__filter-selects">
-                  <select class="transport__filter-sort select-style">
+                <div class="transport__filter-selects select-style">
+                  <select class="transport__filter-sort">
                     <option class="transport__item" value="">Задняя</option>
                     <option class="transport__item" value="">1</option>
                     <option class="transport__item" value="">2</option>
                     <option class="transport__item" value="">3</option>
                   </select>
+                  <span class="transport__arrow arrow"></span>
                 </div>
               </div>
 
             </div>
           </div>
+
           <div class="cargo-order__step">
 
             <div class="step-order">
@@ -86,13 +95,14 @@
                 <div class="goods__type">
                   <label for="carrying" class="goods__label">Тип груза</label>
 
-                  <div class="goods__filter-selects">
-                    <select class="goods__filter-sort  select-style">
-                      <option class="goods__item " disabled selected value="">Не выбран</option>
+                  <div class="goods__filter-selects select-style">
+                    <select class="goods__filter-sort" required>
+                      <option class="goods__item " disabled selected hidden value="">Не выбран</option>
                       <option class="goods__item" value="">1</option>
                       <option class="goods__item" value="">2</option>
                       <option class="goods__item" value="">3</option>
                     </select>
+                    <span class="goods__arrow arrow"></span>
                   </div>
                 </div>
 
@@ -101,14 +111,15 @@
                   <div class="goods__field goods__class">
                     <label for="carrying" class="goods__label">Класс опасности</label>
 
-                    <div class="goods__filter-selects">
-                      <select class="goods__filter-sort  select-style">
+                    <div class="goods__filter-selects select-style">
+                      <select class="goods__filter-sort">
                         <option class="goods__item" value="">Класс 5 — Окисляющие вещества и органические перекиси
                         </option>
                         <option class="goods__item" value="">1</option>
                         <option class="goods__item" value="">2</option>
                         <option class="goods__item" value="">3</option>
                       </select>
+                      <span class="goods__arrow arrow"></span>
                     </div>
                   </div>
 
@@ -149,6 +160,7 @@
               </div>
             </div>
           </div>
+
           <div class="cargo-order__step">
 
             <div class="step-order">
